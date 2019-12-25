@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/rootview"
+    android:layout_height="match_parent"
+    android:background="#306B96"
+    tools:context="com.estimatorguys.app.android.fragments.fragmentsignin">
+
+    <RelativeLayout
+        android:id="@+id/outer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="#FFF"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_logo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_logoicon"
+                    android:layout_width="180dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loginlogo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/thankstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thanks"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/thanksdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thanksdetails"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_done"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner"
+                android:includeFontPadding="false"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

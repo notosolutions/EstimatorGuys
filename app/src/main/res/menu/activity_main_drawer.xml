@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="@string/nav_aboutus" />
+        <item
+            android:id="@+id/nav_support"
+            android:title="@string/nav_support" />
+        <item
+            android:id="@+id/nav_termandcondition"
+            android:title="@string/nav_term" />
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:title="@string/nav_privacy" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/nav_terms" />
+
+    </group>
+
+</menu>
+

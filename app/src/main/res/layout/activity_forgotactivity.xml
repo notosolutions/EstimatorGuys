@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/rootview"
+    android:layout_height="match_parent"
+    android:background="#306B96"
+    tools:context="com.estimatorguys.app.android.fragments.fragmentsignin">
+
+    <RelativeLayout
+        android:id="@+id/outer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <include layout="@layout/dialog_background"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_logindetails"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email"
+                android:textColorHint="#CECBCB"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/rounded_corner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner"
+                android:includeFontPadding="false"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
